@@ -326,8 +326,6 @@
       {
         "intent": "agen.sapaan-pagi",
         "utterances": [
-          "halo",
-          "Halo",
           "Selamat Pagi"
         ],
         "answers": [
