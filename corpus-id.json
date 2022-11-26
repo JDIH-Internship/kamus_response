@@ -314,7 +314,9 @@
             "intent": "agen.tidak-ada",
             "utterances": [
               "Tidak",
-              "tidak"
+              "tidak",
+              "Ubah",
+              "ubah
             ],
             "answers": [
               "Mohon maaf mungkin yang anda cari tidak berkaitan dengan produk hukum"
@@ -322,6 +324,23 @@
             "answers_1": [
               "Saya akan mengalihkan anda kepada admin, mohon untuk mengisi data berikut:\n{{check:FORM_USER}}"
           ]
+        },
+        {
+            "intent": "agen.user",
+            "utterances": ["{{check:VALIDATION_USER_DATA}}"],
+            "answers": [
+                {"answer": "Berikut merupakan data yang sudah saya terima, mohon untuk dicek kembali.\nNama Lengkap:{{check:FORM_NAME}}\nNo Tlp:{{check:FORM_NO_TLP}}\nEmail:{{check:FORM_EMAIL}}\nPertanyaan:{{check:FORM_USER_QUESTION}}\n Apabila data sudah sesuai ketik 'Ya' jika masih belum sesuai ketik 'Ubah'."}
+            ]
+        },
+        {
+            "intent": "agen.user-ya",
+            "utterances": [
+                "Ya",
+                "ya"
+            ],
+            "answers": [
+              "Baik pertanyaan anda sudah saya kirim kepada admin untuk selanjutnya silahkan ditunggu jawaban dari admin melalui email, Terima kasih.."
+            ]
         },
       {
         "intent": "agen.sapaan-pagi",
