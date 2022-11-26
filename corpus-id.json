@@ -326,10 +326,41 @@
       {
         "intent": "agen.sapaan-pagi",
         "utterances": [
-          "Selamat Pagi"
+          "Selamat Pagi",
+          "selamat pagi"
         ],
         "answers": [
-          "Selamat Pagi, Ada yang bisa saya bantu?"
+          "Selamat Pagi, Selamat datang di Asistem Sistem Informasi Hukum, Apabila ada pertanyaan mengenai produk hukum mohon untuk mengikuti intruksi diatas, Terima kasih."
+        ]
+      },
+      {
+        "intent": "agen.sapaan-siang",
+        "utterances": [
+          "Selamat Siang",
+          "selamat siang"
+        ],
+        "answers": [
+          "Selamat Siang, Selamat datang di Asistem Sistem Informasi Hukum, Apabila ada pertanyaan mengenai produk hukum mohon untuk mengikuti intruksi diatas, Terima kasih."
+        ]
+      },
+      {
+        "intent": "agen.sapaan-sore",
+        "utterances": [
+          "Selamat Sore",
+          "selamat sore"
+        ],
+        "answers": [
+          "Selamat Sore, Selamat datang di Asistem Sistem Informasi Hukum, Apabila ada pertanyaan mengenai produk hukum mohon untuk mengikuti intruksi diatas, Terima kasih."
+        ]
+      },
+      {
+        "intent": "agen.sapaan-malam",
+        "utterances": [
+          "Selamat Malam",
+          "selamat malam"
+        ],
+        "answers": [
+          "Selamat Malam, Selamat datang di Asistem Sistem Informasi Hukum, Apabila ada pertanyaan mengenai produk hukum mohon untuk mengikuti intruksi diatas, Terima kasih."
         ]
       }
     ]
