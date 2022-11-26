@@ -127,3 +127,28 @@ Untuk **Naskah Akademik**
 "answers_1": "{{check:FORM_USER}}"
 ```
 untuk mengecek data user
+```
+"intent": "agen.user",
+"utterances": ["{{check:VALIDATION_USER_DATA}}"],
+```
+untuk mengembalikan data user kepada chat agar dapat dilihat kembali oleh user sebagai validasi apakah data sudah sesuai atau belum
+```
+"intent": "agen.user",
+{"answer": "{{check:FORM_NAME}}"}
+```
+untuk mengembalikan data nama lengkap user
+```
+"intent": "agen.user",
+{"answer": "{{check:FORM_NO_TLP}}"}
+```
+untuk mengembalikan data no telephone user
+```
+"intent": "agen.user",
+{"answer": "{{check:FORM_EMAIL}}"}
+```
+untuk mengembalikan data email user
+```
+"intent": "agen.user",
+{"answer": "{{check:FORM_USER_QUESTION}}"}
+```
+untuk mengembalikan data pertanyaan user
