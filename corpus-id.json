@@ -10,343 +10,101 @@
             ]
         },
         {
-            "intent": "agen.produk-hukum",
-            "utterances": [
-              "produk hukum",
-              "Produk Hukum"
-            ],
-            "answers": [
-              "Produk hukum apa yang anda cari?\nProduk Hukum Daerah\nProduk Hukum Wali Kota\nProduk Hukum Pusat\nProduk Hukum Menteri"
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-daerah",
-            "utterances": [
-              "produk hukum daerah",
-              "Produk Hukum Daerah"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai Peraturan Daerah {{check:QUERY_PERDA}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-wali-kota",
-            "utterances": [
-              "produk hukum wali kota",
-              "Produk Hukum Wali Kota"
-            ],
-            "answers": [
-              "Bentuk apa yang ingin anda cari mengenai Produk Hukum Wali Kota?\nPeraturan Walikota\nKeputusan Wali Kota\nIntruksi Wali Kota\nSurat Edaran Wali Kota"
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-perwal",
-            "utterances": [
-              "peraturan wali kota", 
-              "Peraturan Wali Kota"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai Peraturan Wali Kota {{check:QUERY_PERWAL}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-kepwal",
-            "utterances": [
-              "keputusan wali kota",
-              "Keputusan Wali Kota"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai Keputusan Wali Kota {{check:QUERY_KEPWAL}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-inwal",
-            "utterances": [
-              "intruksi wali kota",
-              "Intruksi Wali Kota"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai Intruksi Wali Kota {{check:QUERY_INWAL}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-sewal",
-            "utterances": [
-              "surat edatan wali kota",
-              "Surat Edaran Wali Kota"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai Surat Edaran Wali Kota {{check:QUERY_SEWAL}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-pusat",
-            "utterances": [
-              "produk hukum pusat",
-              "Produk Hukum Pusat"
-            ],
-            "answers": [
-              "Bentuk apa yang ingin anda cari mengenai Produk Hukum Pusat?\nPeraturan Pemerintah Pengganti Undang Undang\nUndang Undang\nKeputusan Presiden\nStaatsblad Van Nederlandsch-indie\nUndang Undang Dasar 1945\nMahkamah Agung\nMahkamah Konstitusi\nPraturan Presiden\nIntruksi Presiden\nPeraturan Pemerintah"
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-perpu",
-            "utterances": [
-              "peraturan pemerintah pengganti undang undang",
-              "Peraturan Pemerintah Pengganti Undang Undang"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai PERPU {{check:QUERY_PERPU}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-uu",
-            "utterances": [
-              "Undang Undang",
-              "undang undang",
-              "uu",
-              "UU"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai UU {{check:QUERY_UU}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-kepres",
-            "utterances": [
-              "Keputusan Presiden",
-              "keputusan presiden",
-              "kepres",
-              "KEPRES"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai Keputusan Presiden {{check:QUERY_KEPRES}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-staatsblad",
-            "utterances": [
-              "Staatsblad Van Nederlandsch-indie",
-              "staatsblad van Nederlandsch-indie",
-              "Staatsblad",
-              "staatsblad",
-              "STAATSBLAD"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai Staatsblad Van Nederlandsch-indie {{check:QUERY_STAATSBLAD}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-UUD1945",
-            "utterances": [
-              "Undang Undang Dasar 1945",
-              "undang undang dasar 1945",
-              "uud 1945",
-              "UUD 1945"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai Undang Undang Dasar 1945 {{check:QUERY_UUD1945}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-ma",
-            "utterances": [
-              "Mahkamah Agung",
-              "mahkamah agung",
-              "ma",
-              "MA"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai Mahkamah Agung {{check:QUERY_MA}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-mk",
-            "utterances": [
-              "Mahkamah Konstitusi",
-              "mahkawah konstitusi",
-              "mk",
-              "MK"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai Mahkamah Konstitusi {{check:QUERY_MK}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-perpres",
-            "utterances": [
-              "Peraturan Presiden",
-              "peraturan presiden",
-              "perpres",
-              "PERPRES"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai Peraturan Presiden {{check:QUERY_PERPRES}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-inpres",
-            "utterances": [
-              "Intruksi Presiden",
-              "intruksi presiden",
-              "inpres",
-              "INPRES"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai Intruksi Presiden {{check:QUERY_INPRES}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-perpem",
-            "utterances": [
-              "Peraturan Pemerintah",
-              "peraturan pemerintah",
-              "perpem",
-              "PERPEM"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai Peraturan Presiden {{check:QUERY_PERPEM}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-menteri",
-            "utterances": [
-              "produk hukum menteri",
-              "Produk Hukum Menteri"
-            ],
-            "answers": [
-              "Bentuk apa yang ingin anda cari mengenai Produk Hukum Menteri?\nKeputusan Menteri\nPeraturan Menteri\nSurat Edaran Menteri\nIntruksi Mentri"
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-kepmen",
-            "utterances": [
-              "Keputusan Menteri",
-              "keputusan menteri",
-              "kepmen",
-              "KEPMEN"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai Keputusan Menteri {{check:QUERY_KEPMEN}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-permen",
-            "utterances": [
-              "Peraturan Menteri",
-              "peraturan menteri",
-              "permen",
-              "PERMEN"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai Peraturan Menteri {{check:QUERY_PERMEN}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-semen",
-            "utterances": [
-              "Surat Edaran Menteri",
-              "surat edaran menteri",
-              "semen",
-              "SEMEN"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai Surat Edaran Menteri {{check:QUERY_SEMEN}}"}
-            ]
-        },
-        {
-            "intent": "agen.produk-hukum-inmen",
-            "utterances": [
-              "Intruksi Menteri",
-              "intruksi menteri",
-              "inmen",
-              "INMEN"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Produk Hukum Mengenai Intruksi Menteri {{check:QUERY_INMEN}}"}
-            ]
-        },
-        {
-            "intent": "agen.opsi-lainnya",
-            "utterances": [
-              "lainnya",
-              "Lainnya"
-            ],
-            "answers": [
-              "Adapun Informasi Hukum Lainnya seperti:\nProgram Pembentukan Peraturan Daerah\nRancangan Peraturan Daerah\nNaskah Akademik\nApakah pilihan anda tertera diatas?\nketik salah satu atau 'tidak'"
-            ]
-        },
-        {
-            "intent": "agen.informasi-hukum-propemperda",
-            "utterances": [
-              "Program Pembentukan Peraturan Daerah",
-              "program pembentukan peraturan daerah",
-              "propemperda",
-              "PROPEMPERDA"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Informasi Hukum Mengenai Program Pembentukan Peraturan Daerah {{check:QUERY_PROPEMPERDA}}"}
-            ]
-        },
-        {
-            "intent": "agen.informasi-hukum-raperda",
-            "utterances": [
-              "Rancangan Peraturan Daerah",
-              "rancangan peraturan daerah",
-              "raperda",
-              "RAPERDA"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Informasi Hukum Mengenai Rancangan Peraturan Daerah {{check:QUERY_RAPERDA}}"}
-            ]
-        },
-        {
-            "intent": "agen.informasi-hukum-naskah-akademik",
-            "utterances": [
-              "Naskah Akademik",
-              "naskah akademik"
-            ],
-            "answers": [
-                { "answer": "Baik berikut saya lampirkan Informasi Hukum Mengenai Naskah Akademik {{check:QUERY_NASKAH_AKADEMIK}}"}
-            ]
-        },
-        {
-            "intent": "agen.tidak-ada",
-            "utterances": [
-              "Tidak",
-              "tidak",
-              "Ubah",
-              "ubah"
-            ],
-            "answers": [
-              "Mohon maaf mungkin yang anda cari tidak berkaitan dengan produk hukum"
-            ],
-            "answers_1": [
-              "Saya akan mengalihkan anda kepada admin, mohon untuk mengisi data berikut:\n{{check:FORM_USER}}"
+    "name": "Corpus",
+    "locale": "id",
+    "data": [
+      {
+        "intent": "agen.format-penulisan",
+        "utterances": [
+          "/format"
+        ],
+        "answers": [
+          "Contoh Format:\nPerda Tentang Penyelenggaraan Kepariwisataan\nPeraturan Daerah Perubahan Atas Peraturan Daerah Kota Bandung Nomor 07 Tahun 2012 Tentang Penyelenggaraan Kepariwisataan\n Beserta Nomor dan Tahun apabila anda mengetahui"
+        ]
+    },
+      {
+          "intent": "agen.search-produk-hukum",
+          "utterances": [
+            "Tentang",
+            "tentang",
+            "ttg",
+            "Perihal",
+            "Contoh Format: Perda Tentang Penyelenggaraan Kepariwisataan Beserta Nomor dan Tahun apabila anda mengetahui",
+            "Mengenai",
+            "mengenai",
+            "perihal",
+            "terkait",
+            "Terkait"
+          ],
+          "answers": [
+              { "answer": "{{searching}}"}
           ]
-        },
+      },
+      {
+        "intent": "agen.search-produk-hukum-terbaru",
+        "utterances": [
+          "Terbaru",
+          "terbaru",
+          "Nomor",
+          "nomor",
+          "Tahun",
+          "tahun"
+        ],
+        "answers": [
+            { "answer": "{{searching_produkHukumTerbaru}}"}
+        ]
+    },
         {
-            "intent": "agen.user",
-            "utterances": ["{{check:VALIDATION_USER_DATA}}"],
-            "answers": [
-                {"answer": "Berikut merupakan data yang sudah saya terima, mohon untuk dicek kembali.\nNama Lengkap:{{check:FORM_NAME}}\nNo Tlp:{{check:FORM_NO_TLP}}\nEmail:{{check:FORM_EMAIL}}\nPertanyaan:{{check:FORM_USER_QUESTION}}\n Apabila data sudah sesuai ketik 'Ya' jika masih belum sesuai ketik 'Ubah'."}
-            ]
-        },
-        {
-            "intent": "agen.user-ya",
-            "utterances": [
-                "Ya",
-                "ya"
+          "intent": "agen.pengalihan-message-tanya",
+          "utterances": [
+            "Bagaimana",
+            "bagaimana",
+            "Tanya",
+            "tanya",
+            "Bertanya",
+            "bertanya",
+            "Kenapa",
+            "kenapa",
+            "Apakah",
+            "apakah"
             ],
             "answers": [
-              "Baik pertanyaan anda sudah saya kirim kepada admin untuk selanjutnya silahkan ditunggu jawaban dari admin melalui email, Terima kasih.."
+              "Mohon maaf format yang anda masukan terlalu rumit, Mohon untuk mempersingkat request ketik /format untuk mengetahui format penulisan atau kontak admin{{admin}}"
             ]
         },
+        {
+          "intent": "agen.pengalihan-message-meminta",
+          "utterances": [
+            "meminta",
+            "Meminta",
+            "minta",
+            "Minta",
+            "Kalau",
+            "kalau"
+          ],
+          "answers": [
+            "Mohon maaf format yang anda masukan terlalu rumit, Untuk format penulisan Anda dapat mengetik /format, Apabila request tidak berkaitan dengan produk hukum anda dapat menghubungi admin{{admin}}"
+          ]
+      },
+      {
+        "intent": "agen.pengalihan-message-tidak-bisa",
+        "utterances": [
+          "tidak bisa",
+          "TIDAK BISA",
+          "Tidak Bisa",
+          "Tidak bisa"
+        ],
+        "answers": [
+          "Mohon maaf atas kendalanya🙏🏼, Sistem masih dalam tahap pengembangan, Apabila kendala masih berlanjut anda dapat menghubungi admin{{admin}}"
+        ]
+    },
       {
         "intent": "agen.sapaan-pagi",
         "utterances": [
           "Selamat Pagi",
-          "selamat pagi"
+          "selamat pagi",
+          "pagi",
+          "Pagi"
         ],
         "answers": [
           "Selamat Pagi, Selamat datang di Asistem Sistem Informasi Hukum, Apabila ada pertanyaan mengenai produk hukum mohon untuk mengikuti intruksi diatas, Terima kasih."
@@ -356,7 +114,9 @@
         "intent": "agen.sapaan-siang",
         "utterances": [
           "Selamat Siang",
-          "selamat siang"
+          "selamat siang",
+          "siang",
+          "Siang"
         ],
         "answers": [
           "Selamat Siang, Selamat datang di Asistem Sistem Informasi Hukum, Apabila ada pertanyaan mengenai produk hukum mohon untuk mengikuti intruksi diatas, Terima kasih."
@@ -366,7 +126,9 @@
         "intent": "agen.sapaan-sore",
         "utterances": [
           "Selamat Sore",
-          "selamat sore"
+          "selamat sore",
+          "sore",
+          "Sore"
         ],
         "answers": [
           "Selamat Sore, Selamat datang di Asistem Sistem Informasi Hukum, Apabila ada pertanyaan mengenai produk hukum mohon untuk mengikuti intruksi diatas, Terima kasih."
@@ -376,7 +138,9 @@
         "intent": "agen.sapaan-malam",
         "utterances": [
           "Selamat Malam",
-          "selamat malam"
+          "selamat malam",
+          "malam",
+          "Malam"
         ],
         "answers": [
           "Selamat Malam, Selamat datang di Asistem Sistem Informasi Hukum, Apabila ada pertanyaan mengenai produk hukum mohon untuk mengikuti intruksi diatas, Terima kasih."
@@ -384,3 +148,4 @@
       }
     ]
   }
+
