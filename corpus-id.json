@@ -2,17 +2,6 @@
     "name": "Corpus",
     "locale": "id",
     "data": [
-        {
-            "intent": "agen.perkenalan",
-            "utterances": ["{{check:FIRST_TIME}}"],
-            "answers": [
-              "Halo perkenalkan saya Asisten Sistem Informasi Hukum atau biasa dipanggil ASIH, Berkaitan dengan produk hukum anda bisa bertanya melalui fitur ini. Apakah anda perlu bantuan mengenai 'produk hukum' atau yang 'lainnya'?, ketik salah satu."
-            ]
-        },
-        {
-    "name": "Corpus",
-    "locale": "id",
-    "data": [
       {
         "intent": "agen.format-penulisan",
         "utterances": [
