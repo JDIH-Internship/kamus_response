@@ -1,7 +1,7 @@
 ### For Resnpose Message
 
-| intent | answer code | description |
-| --- | --- | --- |
+| intent | answer code |
+| --- | --- |
 | agen.search-produk-hukum | {{searching}} |
 | agen.search-produk-hukum-terbaru | {{searching_produkHukumTerbaru}} |
 | agen.pengalihan-message-tanya | {{admin}} |
