@@ -1,26 +1,32 @@
 ### For Resnpose Message
 
-| intent | answer code | deskription |
+| intent | answer code | description |
 | --- | --- | --- |
-| agen.produk-hukum-daerah | {{check:QUERY_PERDA}} |
-| agen.produk-hukum-perwal | {{check:QUERY_PERWAL}} |
-| agen.produk-hukum-kepwal | {{check:QUERY_KEPWAL}} |
-| agen.produk-hukum-inwal | {{check:QUERY_INWAL}} |
-| agen.produk-hukum-sewal | {{check:QUERY_SEWAL}} |
-| agen.produk-hukum-perpu | {{check:QUERY_PERPU}} |
-| agen.produk-hukum-uu | {{check:QUERY_UU}} |
-| agen.produk-hukum-kepres | {{check:QUERY_KEPRES}} |
-| agen.produk-hukum-staatsblad | {{check:QUERY_STAATSBLAD}} |
-| agen.produk-hukum-UUD1945 | {{check:QUERY_UUD1945}} |
-| agen.produk-hukum-ma | {{check:QUERY_MA}} |
-| agen.produk-hukum-mk | {{check:QUERY_MK}} |
-| agen.produk-hukum-perpres | {{check:QUERY_PERPRES}} |
-| agen.produk-hukum-inpres | {{check:QUERY_INPRES}} |
-| agen.produk-hukum-perpem | {{check:QUERY_PERPEM}} |
-| agen.produk-hukum-kepmen | {{check:QUERY_KEPMEN}} |
-| agen.produk-hukum-permen | {{check:QUERY_PERMEN}} |
-| agen.produk-hukum-semen | {{check:QUERY_SEMEN}} |
-| agen.produk-hukum-inmen | {{check:QUERY_INMEN}} |
-| agen.informasi-hukum-propemperda | {{check:QUERY_PROPEMPERDA}} |
-| agen.informasi-hukum-raperda | {{check:QUERY_RAPERDA}} |
-| agen.informasi-hukum-naskah-akademik | {{check:QUERY_NASKAH_AKADEMIK}} |
+| agen.search-produk-hukum | {{searching}} |
+| agen.search-produk-hukum-terbaru | {{searching_produkHukumTerbaru}} |
+| agen.pengalihan-message-tanya | {{admin}} |
+| agen.pengalihan-message-meminta | {{admin}} |
+| agen.pengalihan-message-tidak-bisa | {{admin}} |
+
+agen message tanya, meminta, tidak bisa adalah pengalihan admin dibuat tabel hanya supaya tahu agen mana saja yang memiliki pengaligan kepada admin, berikut messagenya:
+
+agen tanya untuk memproses pertanyaan yang mengandung kata 'tanya'
+```
+"answers": [
+              "Mohon maaf format yang anda masukan terlalu rumit, Mohon untuk mempersingkat request ketik /format untuk mengetahui format penulisan atau kontak admin{{admin}}"
+            ]
+```
+
+agen meminta untuk memproses pertanyaan yang mengandung kata 'meminta'
+```
+"answers": [
+            "Mohon maaf format yang anda masukan terlalu rumit, Untuk format penulisan Anda dapat mengetik /format, Apabila request tidak berkaitan dengan produk hukum anda dapat menghubungi admin{{admin}}"
+          ]
+```
+
+agen tidak bisa untuk memproses pertanyaan apabila user menemukan problem/masalah
+```
+"answers": [
+          "Mohon maaf atas kendalanya, Sistem masih dalam tahap pengembangan, Apabila kendala masih berlanjut anda dapat menghubungi admin{{admin}}"
+        ]
+```
