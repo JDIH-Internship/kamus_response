@@ -8,7 +8,7 @@
           "bantuan"
         ],
         "answers": [
-          "Contoh Format:\nPerda Tentang Penyelenggaraan Kepariwisataan\nPeraturan Daerah Perubahan Atas Peraturan Daerah Kota Bandung Nomor 07 Tahun 2012 Tentang Penyelenggaraan Kepariwisataan\n Beserta Nomor dan Tahun apabila anda mengetahui"
+          "Contoh Format:\n1. Perda Tentang Penyelenggaraan Kepariwisataan\n2. Peraturan Daerah Perubahan Atas Peraturan Daerah Kota Bandung Nomor 07 Tahun 2012 Tentang Penyelenggaraan Kepariwisataan\n3. Beserta Nomor dan Tahun apabila anda mengetahui!"
         ]
     },
       {
@@ -59,7 +59,7 @@
             "apkh"
             ],
             "answers": [
-              "Maaf, saya tidak mengerti maksud dari pertanyaan anda.\nmAnda bisa mengetik 'bantuan' untuk melihat perintah dan format yang tersedia."
+              "Maaf, saya tidak mengerti maksud dari pertanyaan anda.\nmAnda bisa mengetik 'bantuan' untuk melihat perintah dan format yang tersedia.{{pilihan:['bantuan']}}"
             ]
         },
         {
@@ -79,7 +79,7 @@
             "klw"
           ],
           "answers": [
-            "Maaf saya tidak mengerti maksud dari pertanyaan anda, Untuk format penulisan Anda dapat mengetik bantuan\n\nApabila permintaan tidak berkaitan dengan produk hukum anda dapat menghubungi admin{{admin}}"
+            "Maaf saya tidak mengerti maksud dari pertanyaan anda, Untuk format penulisan Anda dapat mengetik bantuan\n\nApabila permintaan tidak berkaitan dengan produk hukum anda dapat menghubungi admin{{pilihan:['bantuan', 'kontak admin']}}"
           ]
       },
       {
@@ -89,7 +89,8 @@
           "TIDAK BISA",
           "Tidak Bisa",
           "Tidak bisa",
-          "Ga Bisa"
+          "Ga Bisa",
+		  "Gak Bisa"
         ],
         "answers": [
           "Mohon maaf atas kendalanya🙏🏼, Sistem masih dalam tahap pengembangan, Apabila kendala masih berlanjut anda dapat menghubungi admin{{admin}}"
@@ -105,7 +106,7 @@
             "punteun"
         ],
         "answers": [
-          "Selamat datang di Asistem Sistem Informasi Hukum, Apabila ada pertanyaan mengenai produk hukum mohon untuk mengikuti intruksi diatas, Terima kasih."
+          "Selamat datang di Asistem Sistem Informasi Hukum, Apabila ada pertanyaan mengenai produk hukum mohon untuk mengikuti intruksi diatas, Terima kasih.{{pilihan:['kontak admin']}}"
         ]
       },
       {
@@ -155,7 +156,21 @@
         "answers": [
           "Selamat Malam, Selamat datang di Asistem Sistem Informasi Hukum, Apabila ada pertanyaan mengenai produk hukum mohon untuk mengikuti intruksi diatas, Terima kasih."
         ]
+      },
+      {
+        "intent": "agen.terimakasih",
+        "utterances": [
+          "Terima Kasih",
+          "Hatur Nuhun",
+          "Nuhun",
+          "Nhn",
+		  "Terimakasih",
+		  "Makasih",
+		  "Thank you"
+        ],
+        "answers": [
+          "Terima Kasih Kembali🙏🏼, Asisten Sistem Informasi Hukum Akan Selalu Melayani Anda.\n\nApabila ingin mencari produk hukum gunakan ASIH"
+        ]
       }
     ]
   }
-
