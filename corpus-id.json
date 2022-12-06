@@ -55,10 +55,10 @@
             "Apakah",
             "apakah",
             "Apkh",
-            "apkh
+            "apkh"
             ],
             "answers": [
-              "Maaf, saya tidak mengerti maksud dari pertanyaan anda.\n\nAnda bisa mengetik 'bantuan' untuk melihat perintah dan format yang tersedia."
+              "Maaf, saya tidak mengerti maksud dari pertanyaan anda.\nmAnda bisa mengetik 'bantuan' untuk melihat perintah dan format yang tersedia."
             ]
         },
         {
@@ -75,10 +75,10 @@
             "Kalo",
             "kalo",
             "Klw",
-            "klw
+            "klw"
           ],
           "answers": [
-            "Maaf saya tidak mengerti maksud dari pertanyaan anda, Untuk format penulisan Anda dapat mengetik bantuan, Apabila permintaan tidak berkaitan dengan produk hukum anda dapat menghubungi admin{{admin}}"
+            "Maaf saya tidak mengerti maksud dari pertanyaan anda, Untuk format penulisan Anda dapat mengetik bantuan\n\nApabila permintaan tidak berkaitan dengan produk hukum anda dapat menghubungi admin{{admin}}"
           ]
       },
       {
