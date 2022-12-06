@@ -94,6 +94,19 @@
           "Mohon maaf atas kendalanya🙏🏼, Sistem masih dalam tahap pengembangan, Apabila kendala masih berlanjut anda dapat menghubungi admin{{admin}}"
         ]
     },
+        {
+        "intent": "agen.sapaan",
+        "utterances": [
+            "Hai",
+            "halo",
+            "hey",
+            "punten",
+            "punteun"
+        ],
+        "answers": [
+          "Selamat datang di Asistem Sistem Informasi Hukum, Apabila ada pertanyaan mengenai produk hukum mohon untuk mengikuti intruksi diatas, Terima kasih."
+        ]
+      },
       {
         "intent": "agen.sapaan-pagi",
         "utterances": [
