@@ -5,7 +5,7 @@
       {
         "intent": "agen.format-penulisan",
         "utterances": [
-          "/format"
+          "bantuan"
         ],
         "answers": [
           "Contoh Format:\nPerda Tentang Penyelenggaraan Kepariwisataan\nPeraturan Daerah Perubahan Atas Peraturan Daerah Kota Bandung Nomor 07 Tahun 2012 Tentang Penyelenggaraan Kepariwisataan\n Beserta Nomor dan Tahun apabila anda mengetahui"
@@ -22,31 +22,30 @@
             "mengenai",
             "perihal",
             "terkait",
-            "Terkait"
+            "Terkait",
+            "Nomor",
+            "nomor",
+            "Nmr",
+            "nmr",
+            "No",
+            "no",
+            "Tahun",
+            "tahun",
+            "Thn",
+            "thn"
+              
           ],
           "answers": [
               { "answer": "{{searching}}"}
           ]
       },
-      {
-        "intent": "agen.search-produk-hukum-terbaru",
-        "utterances": [
-          "Terbaru",
-          "terbaru",
-          "Nomor",
-          "nomor",
-          "Tahun",
-          "tahun"
-        ],
-        "answers": [
-            { "answer": "{{searching_produkHukumTerbaru}}"}
-        ]
-    },
         {
           "intent": "agen.pengalihan-message-tanya",
           "utterances": [
             "Bagaimana",
             "bagaimana",
+            "Bgmn",
+            "bgmn",
             "Tanya",
             "tanya",
             "Bertanya",
@@ -54,10 +53,12 @@
             "Kenapa",
             "kenapa",
             "Apakah",
-            "apakah"
+            "apakah",
+            "Apkh",
+            "apkh
             ],
             "answers": [
-              "Mohon maaf format yang anda masukan terlalu rumit, Mohon untuk mempersingkat request ketik /format untuk mengetahui format penulisan atau kontak admin{{admin}}"
+              "Maaf, saya tidak mengerti maksud dari pertanyaan anda.\n\nAnda bisa mengetik 'bantuan' untuk melihat perintah dan format yang tersedia."
             ]
         },
         {
@@ -68,10 +69,16 @@
             "minta",
             "Minta",
             "Kalau",
-            "kalau"
+            "kalau",
+            "Kalow",
+            "kalow",
+            "Kalo",
+            "kalo",
+            "Klw",
+            "klw
           ],
           "answers": [
-            "Mohon maaf format yang anda masukan terlalu rumit, Untuk format penulisan Anda dapat mengetik /format, Apabila request tidak berkaitan dengan produk hukum anda dapat menghubungi admin{{admin}}"
+            "Maaf saya tidak mengerti maksud dari pertanyaan anda, Untuk format penulisan Anda dapat mengetik bantuan, Apabila permintaan tidak berkaitan dengan produk hukum anda dapat menghubungi admin{{admin}}"
           ]
       },
       {
@@ -80,7 +87,8 @@
           "tidak bisa",
           "TIDAK BISA",
           "Tidak Bisa",
-          "Tidak bisa"
+          "Tidak bisa",
+          "Ga Bisa"
         ],
         "answers": [
           "Mohon maaf atas kendalanya🙏🏼, Sistem masih dalam tahap pengembangan, Apabila kendala masih berlanjut anda dapat menghubungi admin{{admin}}"
