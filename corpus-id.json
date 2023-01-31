@@ -1,176 +1,331 @@
 {
-    "name": "Corpus",
-    "locale": "id",
-    "data": [
-      {
-        "intent": "agen.format-penulisan",
-        "utterances": [
-          "bantuan"
-        ],
-        "answers": [
-          "Contoh Format:\n1. Perda Tentang Penyelenggaraan Kepariwisataan\n2. Peraturan Daerah Perubahan Atas Peraturan Daerah Kota Bandung Nomor 07 Tahun 2012 Tentang Penyelenggaraan Kepariwisataan\n3. Beserta Nomor dan Tahun apabila anda mengetahui!"
-        ]
-    },
-      {
-          "intent": "agen.search-produk-hukum",
-          "utterances": [
-            "Tentang",
-            "tentang",
-            "ttg",
-            "Perihal",
-            "Mengenai",
-            "mengenai",
-            "perihal",
-            "terkait",
-            "Terkait",
-            "Nomor",
-            "nomor",
-            "Nomer",
-            "Nmr",
-            "nmr",
-            "No",
-            "no",
-            "Tahun",
-            "tahun",
-            "Thn",
-            "thn"
-              
-          ],
-          "answers": [
-              { "answer": "{{searching}}"}
-          ]
-      },
-        {
-          "intent": "agen.pengalihan-message-tanya",
-          "utterances": [
-            "Bagaimana",
-            "bagaimana",
-            "Bgmn",
-            "bgmn",
-            "Tanya",
-            "tanya",
-            "Bertanya",
-            "bertanya",
-            "Kenapa",
-            "kenapa",
-            "Apakah",
-            "apakah",
-            "Apkh",
-            "apkh"
-            ],
-            "answers": [
-              "Maaf, saya tidak mengerti maksud dari pertanyaan anda.\nmAnda bisa mengetik 'bantuan' untuk melihat perintah dan format yang tersedia.{{pilihan:['bantuan']}}"
-            ]
-        },
-        {
-          "intent": "agen.pengalihan-message-meminta",
-          "utterances": [
-            "meminta",
-            "Meminta",
-            "minta",
-            "Minta",
-            "Kalau",
-            "kalau",
-            "Kalow",
-            "kalow",
-            "Kalo",
-            "kalo",
-            "Klw",
-            "klw"
-          ],
-          "answers": [
-            "Maaf saya tidak mengerti maksud dari pertanyaan anda, Untuk format penulisan Anda dapat mengetik bantuan\n\nApabila permintaan tidak berkaitan dengan produk hukum anda dapat menghubungi admin{{pilihan:['bantuan', 'kontak admin']}}"
-          ]
-      },
-      {
-        "intent": "agen.pengalihan-message-tidak-bisa",
-        "utterances": [
-          "tidak bisa",
-          "TIDAK BISA",
-          "Tidak Bisa",
-          "Tidak bisa",
-          "Ga Bisa",
-		  "Gak Bisa"
-        ],
-        "answers": [
-          "Mohon maaf atas kendalanya🙏🏼, Sistem masih dalam tahap pengembangan, Apabila kendala masih berlanjut anda dapat menghubungi admin{{admin}}"
-        ]
-    },
-        {
-        "intent": "agen.sapaan",
-        "utterances": [
-            "Hai",
-            "halo",
-            "hey",
-            "punten",
-            "punteun"
-        ],
-        "answers": [
-          "Selamat datang di Asistem Sistem Informasi Hukum, Apabila ada pertanyaan mengenai produk hukum mohon untuk mengikuti intruksi diatas, Terima kasih.{{pilihan:['kontak admin']}}"
-        ]
-      },
-      {
-        "intent": "agen.sapaan-pagi",
-        "utterances": [
-          "Selamat Pagi",
-          "selamat pagi",
-          "pagi",
-          "Pagi"
-        ],
-        "answers": [
-          "Selamat Pagi, Selamat datang di Asistem Sistem Informasi Hukum, Apabila ada pertanyaan mengenai produk hukum mohon untuk mengikuti intruksi diatas, Terima kasih."
-        ]
-      },
-      {
-        "intent": "agen.sapaan-siang",
-        "utterances": [
-          "Selamat Siang",
-          "selamat siang",
-          "siang",
-          "Siang"
-        ],
-        "answers": [
-          "Selamat Siang, Selamat datang di Asistem Sistem Informasi Hukum, Apabila ada pertanyaan mengenai produk hukum mohon untuk mengikuti intruksi diatas, Terima kasih."
-        ]
-      },
-      {
-        "intent": "agen.sapaan-sore",
-        "utterances": [
-          "Selamat Sore",
-          "selamat sore",
-          "sore",
-          "Sore"
-        ],
-        "answers": [
-          "Selamat Sore, Selamat datang di Asistem Sistem Informasi Hukum, Apabila ada pertanyaan mengenai produk hukum mohon untuk mengikuti intruksi diatas, Terima kasih."
-        ]
-      },
-      {
-        "intent": "agen.sapaan-malam",
-        "utterances": [
-          "Selamat Malam",
-          "selamat malam",
-          "malam",
-          "Malam"
-        ],
-        "answers": [
-          "Selamat Malam, Selamat datang di Asistem Sistem Informasi Hukum, Apabila ada pertanyaan mengenai produk hukum mohon untuk mengikuti intruksi diatas, Terima kasih."
-        ]
-      },
-      {
-        "intent": "agen.terimakasih",
-        "utterances": [
-          "Terima Kasih",
-          "Hatur Nuhun",
-          "Nuhun",
-          "Nhn",
-		  "Terimakasih",
-		  "Makasih",
-		  "Thank you"
-        ],
-        "answers": [
-          "Terima Kasih Kembali🙏🏼, Asisten Sistem Informasi Hukum Akan Selalu Melayani Anda.\n\nApabila ingin mencari produk hukum gunakan ASIH"
-        ]
-      }
-    ]
-  }
+  "name": "Corpus",
+  "locale": "id",
+  "data": [
+		{
+			"intent": "agen.format-penulisan",
+			"utterances": ["format"],
+			"answers": [
+				"Contoh format yang saya mengerti:\n\n1. **Peraturan Daerah** tentang **Pajak Restoran**\n2. **Produk Hukum** tentang **Tanah**\n3. **Perwal** tentang **Lingkungan**\n4. **Peraturan** nomor **60** tahun **2022**"
+			]
+		},
+		{
+			"intent": "agen.format-penulisan",
+			"utterances": ["bantuan"],
+			"answers": [
+				"Berikut merupakan pertanyaan yang dapat saya jawab:\n\n1. Apa itu JDIH\n2. Tugas JDIH\n3. Visi JDIH\n4. Misi JDIH\n5. Tujuan JDIH\n6. Bentuk Peraturan\n7. Cara Mencari Peraturan"
+			]
+		},
+		{
+			"intent": "agen.search-produk-hukum",
+			"utterances": [
+				"Tentang",
+				"tentang",
+				"ttg",
+				"Perihal",
+				"Mengenai",
+				"mengenai",
+				"perihal",
+				"terkait",
+				"Terkait",
+				"Nomor",
+				"nomor",
+				"Nomer",
+				"Nmr",
+				"nmr",
+				"No",
+				"no",
+				"Tahun",
+				"tahun",
+				"Thn",
+				"thn"
+			],
+			"answers": [
+				{
+					"answer": "{{searching}}"
+				}
+			]
+		},
+		{
+			"intent": "agen.pengalihan-message-tanya",
+			"utterances": [
+				"Tanya",
+				"tanya",
+				"Bertanya",
+				"bertanya",
+				"Kenapa",
+				"kenapa",
+				"Apakah",
+				"apakah",
+				"Apkh",
+				"apkh"
+			],
+			"answers": [
+				"Mohon maaf, saya tidak mengerti maksud dari pertanyaan anda.\n\nUntuk melihat format penulisan, anda dapat mengetik **bantuan**.\nApabila permintaan anda tidak berkaitan dengan pencarian produk hukum, anda dapat menghubungi admin dengan mengetik **kontak admin**{{pilihan:['bantuan', 'kontak admin']}}",
+				"Mohon maaf, saya tidak bisa memproses pertanyaan anda.\n\nUntuk melihat format penulisan, anda dapat mengetik **bantuan**.\nApabila permintaan anda tidak berkaitan dengan pencarian produk hukum, anda dapat menghubungi admin dengan mengetik **kontak admin**{{pilihan:['bantuan', 'kontak admin']}}",
+				"Mohon maaf, pertanyaan anda terlalu kompleks untuk saya mengerti.\n\nUntuk melihat format penulisan, anda dapat mengetik **bantuan**.\nApabila permintaan anda tidak berkaitan dengan pencarian produk hukum, anda dapat menghubungi admin dengan mengetik **kontak admin**{{pilihan:['bantuan', 'kontak admin']}}",
+				"Mohon maaf, diusahakan untuk tidak menggunakan kalimat tanya. \n\nUntuk melihat format penulisan, anda dapat mengetik **bantuan**.\nApabila permintaan anda tidak berkaitan dengan pencarian produk hukum, anda dapat menghubungi admin dengan mengetik **kontak admin**{{pilihan:['bantuan', 'kontak admin']}}"
+			]
+		},
+		{
+			"intent": "agen.pengalihan-message-meminta",
+			"utterances": [
+				"meminta",
+				"Meminta",
+				"minta",
+				"Minta",
+				"Kalau",
+				"kalau",
+				"Kalow",
+				"kalow",
+				"Kalo",
+				"kalo",
+				"Klw",
+				"klw"
+			],
+			"answers": [
+				"Sepertinya pertanyaan anda lumayan rumit. Jika anda ingin mencari produk hukum, anda bisa langsung mencari bentuk atau perihal produk hukum yang anda cari.\n\nUntuk melihat format penulisan, anda dapat mengetik **bantuan**.\nApabila permintaan anda tidak berkaitan dengan pencarian produk hukum, anda dapat menghubungi admin dengan mengetik **kontak admin**{{pilihan:['bantuan', 'kontak admin']}}",
+				"Mohon maaf saya kurang mengerti maksud dari perintah anda.\nUntuk melihat format penulisan, anda dapat mengetik **bantuan**.\nApabila permintaan anda tidak berkaitan dengan pencarian produk hukum, anda dapat menghubungi admin dengan mengetik **kontak admin**{{pilihan:['bantuan', 'kontak admin']}}",
+				"Dimohon untuk menggunakan format yang sesuai. \n\nUntuk melihat format penulisan, anda dapat mengetik **bantuan**.\nApabila permintaan anda tidak berkaitan dengan pencarian produk hukum, anda dapat menghubungi admin dengan mengetik **kontak admin**{{pilihan:['bantuan', 'kontak admin']}}"
+			]
+		},
+		{
+			"intent": "agen.pengalihan-message-tidak-bisa",
+			"utterances": [
+				"TIDAKBISA",
+				"TidakBisa",
+				"GakBisa"
+			],
+			"answers": [
+				"Mohon maaf atas kendalanya.\n\nSistem kami masih dalam tahap pengembangan, Apabila kendala masih berlanjut anda dapat menghubungi admin",
+				"Maaf, sistem kami masih dalam tahap pengembangan.\n\nApabila kendala masih berlanjut anda dapat menghubungi admin"
+			]
+		},
+		{
+			"intent": "agen.admin",
+			"utterances": [
+				"admin",
+				"Admin",
+				"Kontak Admin",
+				"kontak admin",
+				"Kontak admin",
+				"kontak Admin"
+			],
+			"answers": [
+				"Untuk menghubungi admin, anda dapat mengirimkan pesan pada tautan berikut: [Kontak Admin](/asih/tanya-admin)",
+				"Admin dapat dihubungi melalui tautan berikut: [Kontak Admin](/asih/tanya-admin)"
+			]
+		},
+		{
+			"intent": "agen.apa-itu-jdih",
+			"utterances": [
+				"Apa itu JDIH Kota Bandung",
+				"Apa itu JDIH",
+				"JDIH Kota Bandung itu Apa",
+				"JDIH itu Apa",
+				"Pengertian JDIH"
+			],
+			"answers": [
+				"Mengenai Apa itu JDIH mungkin akan diketahui ketika anda membaca sejarah JDIHN berikut: Ide membentuk Jaringan Dokumentasi dan Informasi Hukum Nasional (JDIHN), secara historis melekat erat dengan pembangunan hukum nasional dalam upaya mewujudkan supremasi hukum. Dikatakan demikian karena embrio pembentukan JDIHN adalah salah satu rekomendasi dari kegiatan pembangunan hukum nasional yaitu Seminar Hukum Nasional III tahun 1974 di Surabaya. \n\nMengenai detailnya anda dapat melihat langsung pada profil JDIH"
+			]
+		},
+		{
+			"intent": "agen.visi-jdih",
+			"utterances": [
+				"Visi JDIH Kota Bandung",
+				"Visi JDIH",
+				"Apasih Visi JDIH Kota Bandung",
+				"Apasih Visi JDIH"
+			],
+			"answers": [
+				"Terwujudnya kerangka sistem yang menunjang penyelenggaraan pemerintah dan pembangunan Kota Bandung yang mengedepankan terciptanya suatu keserasian antara ketertiban, ketentraman, dan kesejahteraan."
+			]
+		},
+		{
+			"intent": "agen.misi-jdih",
+			"utterances": [
+				"Misi JDIH Kota Bandung",
+				"Misi JDIH",
+				"Apasih Misi JDIH Kota Bandung",
+				"Apasih Misi JDIH"
+			],
+			"answers": [
+				"Terdapat beberapa poin mengenai Misi JDIH Kota Bandung, seperti:\n1. Menyusun peraturan perundang - undangan yang dapat merekayasa masyarakat sehingga tercipta Kota Bandung yang tertib, aman, dan sejahtera;\n2. Menciptakan kondisi kota yang tertib dengan upaya penegakan hukum;\n3. Mengkaji, menyusun dan mengembangkan peraturan perundang - undangan untuk mewujudkan good governance;\n4.  Meningkatkan kinerja dan produktivitas organisasi melalui pelayanan hukum, informasi, dan pengkajian hukum."
+			]
+		},
+		{
+			"intent": "agen.tugas-jdih",
+			"utterances": [
+				"Tugas Pokok JDIH Kota Bandung",
+				"Tugas Pokok JDIH",
+				"Apasih Tugas Pokok JDIH Kota Bandung",
+				"Apasih Tugas Pokok JDIH",
+				"Tugas JDIH Kota Bandung",
+				"Tugas JDIH",
+				"Apasih Tugas JDIH Kota Bandung",
+				"Apasih Tugas JDIH"
+			],
+			"answers": [
+				"Untuk melaksanakan sebagian tugas Asisten Pemerintahan dan Kesejahteraan Rakyat di bidang penyiapan dan perumusan produk-produk hukum daerah, bantuan hukum, administrasi dan dokumentasi hukum, serta mengkaji dan mengevaluasi pelaksanaan peraturan perundangan pada pemerintah kota bandung."
+			]
+		},
+		{
+			"intent": "agen.tujuan-jdih",
+			"utterances": [
+				"Tujuan JDIH Kota Bandung",
+				"Tujuan JDIH",
+				"Apasih Tujuan JDIH Kota Bandung",
+				"Apasih Tujuan JDIH"
+			],
+			"answers": [
+				"Pelaksanaan Jaringan Dokumentasi Dan Informasi (JDI) Hukum online ini dibangun guna mempermudah penemuan kembali peraturan perundang-undangan secara cepat, tepat, dan akurat."
+			]
+		},
+		{
+			"intent": "agen.fungsi-jdih",
+			"utterances": [
+				"Fungsi JDIH Kota Bandung",
+				"Fungsi JDIH",
+				"Apasih Fungsi JDIH Kota Bandung",
+				"Apasih Fungsi JDIH"
+			],
+			"answers": [
+				"Saya mendapatkan beberapa fungsi JDIH, seperti:\n\n1. Salah satu upaya menyediaan sarana pembangunan bidang hukum;\n2. Untuk meningkatkan penyebaran luasan dan pemahaman pengetahuan hukum;\n3. Untuk memudahkan pencarian dan penelurusan peraturan perundang- undangan dan bahan dokumentasi hukum lainnya;\n4. Untuk Meningkatkan pemberian pelayanan pelaksanaan penegakan hukum dan kepastian hukum."
+			]
+		},
+		{
+			"intent": "agen.struktur-organisasi-jdih",
+			"utterances": [
+				"Struktur Organisasi JDIH Kota Bandung",
+				"Struktur Organisasi JDIH",
+				"Apasih Struktur Organisasi JDIH Kota Bandung",
+				"Apasih Struktur Organisasi JDIH"
+			],
+			"answers": [
+				"Sayang sekali saya belum bisa menampilkan gambar 😓.\nMengenai Struktur Organisasi anda dapat melihatnya pada profil JDIH Kota Bandung."
+			]
+		},
+		{
+			"intent": "agen.cari-peraturan",
+			"utterances": [
+				"Bagaimana cara mencari peraturan",
+				"cara mencari peraturan",
+				"Gimana cara mencari peraturan",
+				"gmn cara mencari peraturan",
+				"cara mencari peraturan itu gimana ya",
+				"cara mencari peraturan itu bagaimana ya",
+				"cara mencari peraturan itu gmn ya",
+				"cara mencari peraturan itu bgmn ya",
+				"nyari peraturannya gimana"
+			],
+			"answers": [
+				"Anda dapat mengikuti beberapa saran berikut:\n\n1. Peraturan apa yang ingin anda cari? apakah peraturan mengenai produk hukum atau informasi hukum.\n2. Bentuk atau Prihal Peraturan apa yang ingin anda cari?\nBentuk peraturan itu seperti **Peraturan Daerah**,**Peraturan Wali Kota**,**Keputusan Presiden*. untuk detail bentuk peraturan anda dapat mengetik **Bentuk Peraturan**\n3. Apabila anda tidak mengetahui bentuknya, anda dapat mencari menggunakan prihal saja\n4. Untuk melakukan pencarian Anda dapat melakukannya dengan dua opsi\n\n**Opsi pertama** pencarian menggunakan ASIH dengan mengirimkan pesan, akan tetapi ASIH memiliki format tersendiri, anda dapat mengetik **format** untuk melihat detailnya.\n\n**Opsi Kedua** Anda dapat melakukan pencarian di menu beranda pada fitur 'Cari Produk Hukum', setelah itu anda masukan prihal peraturan yang dicari pada 'Kata Kunci Pencarian'\n**Contoh Prihal**\n1. Lingkungan\n2. Pajak Daerah\n3. Kepariwisataan\n\nDiatas merupakan cara untuk mencari peraturan yang sudah saya sampaikan dengan detail, Apabila penjelasan kurang dipahami, anda dapat menghubungi admin dengan mengetik **kontak admin**{{pilihan:['bantuan', 'kontak admin']}} "
+			]
+		},
+		{
+			"intent": "agen.bentuk-peraturan",
+			"utterances": [
+				"Bentuk Peraturan"
+			],
+			"answers": [
+				"Berikut merupakan kumpulan Bentuk Peraturan:\n\n1. Peraturan Pemerintah Pengganti Undang Undang\n2. Undang Undang\n3. Keputusan Presiden\n4 . Staatsblad Van Nederlandsch-Indie\n5. Undang Undang Dasar 1945\n6. Mahkamah Agung\n7. Mahkamah Konstitusi\n8. Peraturan Presiden\n9. Instruksi Presiden\n10. Peraturan Pemerintah"
+			]
+		},
+		{
+			"intent": "agen.sapaan",
+			"utterances": [
+				"Hai",
+				"halo",
+				"hey",
+				"punten",
+				"punteun"
+			],
+			"answers": [
+				"Halo juga.",
+				"Hai juga.",
+				"Asih disini, apabila anda butuh bantuan, anda dapat mengetik **bantuan**"
+			]
+		},
+		{
+			"intent": "agen.sapaan-islam",
+			"utterances": [
+				"Assalamu'alaikum",
+				"Assalamu'alaikum wr.wb",
+				"Assalamu'alaikum wr wb"
+			],
+			"answers": [
+				"Wa ‘alaikumus salam wa rahmatullahi wabarakatuh, ada yang bisa saya bantu?"
+			]
+		},
+		{
+			"intent": "agen.sapaan-pagi",
+			"utterances": [
+				"Selamat Pagi",
+				"selamat pagi",
+				"pagi",
+				"Pagi"
+			],
+			"answers": [
+				"Selamat pagi juga.",
+				"Selamat pagi juga, ada yang bisa saya bantu?"
+			]
+		},
+		{
+			"intent": "agen.sapaan-siang",
+			"utterances": [
+				"Selamat Siang",
+				"selamat siang",
+				"siang",
+				"Siang"
+			],
+			"answers": [
+				"Selamat siang juga.",
+				"Selamat siang juga, ada yang bisa saya bantu?"
+			]
+		},
+		{
+			"intent": "agen.sapaan-sore",
+			"utterances": [
+				"Selamat Sore",
+				"selamat sore",
+				"sore",
+				"Sore"
+			],
+			"answers": [
+				"Selamat sore juga.",
+				"Selamat sore juga, ada yang bisa saya bantu?"
+			]
+		},
+		{
+			"intent": "agen.sapaan-malam",
+			"utterances": [
+				"Selamat Malam",
+				"selamat malam",
+				"malam",
+				"Malam"
+			],
+			"answers": [
+				"Selamat malam juga.",
+				"Selamat malam juga, ada yang bisa saya bantu?"
+			]
+		},
+		{
+			"intent": "agen.terimakasih",
+			"utterances": [
+				"Terima Kasih",
+				"Hatur Nuhun",
+				"Nuhun",
+				"Nhn",
+				"Terimakasih",
+				"Makasih",
+				"Thank you",
+				"tengkyu",
+				"thanks"
+			],
+			"answers": [
+				"Terima Kasih Kembali, Asisten Sistem Informasi Hukum Akan Selalu Melayani Anda.\nmApabila anda berkenan, anda bisa memberikan penilaian terhadap layanan kami pada link berikut:\n[Survey penilaian](/asih/penilaian)",
+				"Sama-sama, Asisten Sistem Informasi Hukum Akan Selalu Melayani Anda.\nmApabila anda berkenan, anda bisa memberikan penilaian terhadap layanan kami pada link berikut:\n[Survey penilaian](/asih/penilaian)"
+			]
+		}
+	]
+}
