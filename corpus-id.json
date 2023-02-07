@@ -2,11 +2,35 @@
   "name": "Corpus",
   "locale": "id",
   "data": [
+    {
+      "intent": "agen.ASIH",
+      "utterances": [
+        "Apa itu ASIH",
+        "ASIH teh naon",
+        "Kamu siapa",
+        "About ASIH"
+      ],
+      "answers": [
+        "ASIH merupakan singkatan dari Asisten Sistem Informasi Hukum.\n Saya dibuat oleh mahasiswa Sekolah Tinggi Teknologi Bandung dalam Program Kerjasama dengan Pemerintah Kota Bandung.\n\n Saya dikembangkan oleh 3 (tiga) programmer selama kurang lebih 5 bulan berbarengan dengan didesain ulangnya website yang sekarang anda gunakan\n\n Berikut ketiga mahasiswa yang telah berkontribusi dalam pengembangan:\n\n1. Arief Rachmawan\nsebagai full stack developer website\n\n2. Listyo Adi Pamungkas\n Sebagai full stack developer mobile\n\n3. Sandi Hermawan\n Sebagai pengembang Artificial Inteligence\n\n Untuk mencapai hasil yang lebih optimal saya akan terus dikembangkan."
+      ]
+    },
+    {
+      "intent": "agen.tugas-ASIH",
+      "utterances": [
+        "Apa tugas ASIH",
+        "Apa sih tugas ASIH",
+        "Apa tugas Kamu",
+        "Tugas ASIH"
+      ],
+      "answers": [
+        "Saya bertugas untuk menjadi AsisteN Sistem Informasi Hukum Kota Bandung, Dimana saya akan menjawab beberapa hal terkait JDIH Kota Bandung.\n\n Selain itu disini juga bisa dipakai untuk mencari sebuah peraturan hukum."
+      ]
+    },
 		{
 			"intent": "agen.format-penulisan",
 			"utterances": ["format"],
 			"answers": [
-				"Contoh format yang saya mengerti:\n\n1. **Peraturan Daerah** tentang **Pajak Restoran**\n2. **Produk Hukum** tentang **Tanah**\n3. **Perwal** tentang **Lingkungan**\n4. **Peraturan** nomor **60** tahun **2022**"
+				"Contoh format yang saya mengerti:\n\n1. Tampilkan **Peraturan Daerah** tentang **Pajak Restoran**\n2. Saya ingin mencari **Produk Hukum** tentang **Tanah**\n3. **Perwal** tentang **Lingkungan**\n4. **Peraturan** nomor **60** tahun **2022**"
 			]
 		},
 		{
@@ -129,6 +153,16 @@
 				"Mengenai Apa itu JDIH mungkin akan diketahui ketika anda membaca sejarah JDIHN berikut: Ide membentuk Jaringan Dokumentasi dan Informasi Hukum Nasional (JDIHN), secara historis melekat erat dengan pembangunan hukum nasional dalam upaya mewujudkan supremasi hukum. Dikatakan demikian karena embrio pembentukan JDIHN adalah salah satu rekomendasi dari kegiatan pembangunan hukum nasional yaitu Seminar Hukum Nasional III tahun 1974 di Surabaya. \n\nMengenai detailnya anda dapat melihat langsung pada profil JDIH"
 			]
 		},
+    {
+			"intent": "agen.setifikat-tanah",
+			"utterances": [
+				"cara membuat sertifikat tanah",
+        "sertifikat tanah"
+			],
+			"answers": [
+				"Mohon maaf, saya belum diberikan izin untuk menjawab pertanyaan mengenai sertifikat tanah, untuk informasi lebih lanjut anda dapat menghubungi admin{{pilihan:['kontak admin']}}"
+			]
+		},
 		{
 			"intent": "agen.visi-jdih",
 			"utterances": [
@@ -138,7 +172,7 @@
 				"Apasih Visi JDIH"
 			],
 			"answers": [
-				"Terwujudnya kerangka sistem yang menunjang penyelenggaraan pemerintah dan pembangunan Kota Bandung yang mengedepankan terciptanya suatu keserasian antara ketertiban, ketentraman, dan kesejahteraan."
+				"Berikut merupakan Visi JDIH Kota Bandung yang saya dapatkan\n\nTerwujudnya kerangka sistem yang menunjang penyelenggaraan pemerintah dan pembangunan Kota Bandung yang mengedepankan terciptanya suatu keserasian antara ketertiban, ketentraman, dan kesejahteraan."
 			]
 		},
 		{
@@ -150,7 +184,7 @@
 				"Apasih Misi JDIH"
 			],
 			"answers": [
-				"Terdapat beberapa poin mengenai Misi JDIH Kota Bandung, seperti:\n1. Menyusun peraturan perundang - undangan yang dapat merekayasa masyarakat sehingga tercipta Kota Bandung yang tertib, aman, dan sejahtera;\n2. Menciptakan kondisi kota yang tertib dengan upaya penegakan hukum;\n3. Mengkaji, menyusun dan mengembangkan peraturan perundang - undangan untuk mewujudkan good governance;\n4.  Meningkatkan kinerja dan produktivitas organisasi melalui pelayanan hukum, informasi, dan pengkajian hukum."
+				"Mengenai Misi JDIH Kota Bandung saya menemukan beberapa poin, seperti:\n1. Menyusun peraturan perundang - undangan yang dapat merekayasa masyarakat sehingga tercipta Kota Bandung yang tertib, aman, dan sejahtera;\n2. Menciptakan kondisi kota yang tertib dengan upaya penegakan hukum;\n3. Mengkaji, menyusun dan mengembangkan peraturan perundang - undangan untuk mewujudkan good governance;\n4.  Meningkatkan kinerja dan produktivitas organisasi melalui pelayanan hukum, informasi, dan pengkajian hukum."
 			]
 		},
 		{
@@ -166,7 +200,7 @@
 				"Apasih Tugas JDIH"
 			],
 			"answers": [
-				"Untuk melaksanakan sebagian tugas Asisten Pemerintahan dan Kesejahteraan Rakyat di bidang penyiapan dan perumusan produk-produk hukum daerah, bantuan hukum, administrasi dan dokumentasi hukum, serta mengkaji dan mengevaluasi pelaksanaan peraturan perundangan pada pemerintah kota bandung."
+				"Berikut merupakan Tugas Pokok JDIH Kota Bandung:\n\nUntuk melaksanakan sebagian tugas Asisten Pemerintahan dan Kesejahteraan Rakyat di bidang penyiapan dan perumusan produk-produk hukum daerah, bantuan hukum, administrasi dan dokumentasi hukum, serta mengkaji dan mengevaluasi pelaksanaan peraturan perundangan pada pemerintah kota bandung."
 			]
 		},
 		{
@@ -178,7 +212,7 @@
 				"Apasih Tujuan JDIH"
 			],
 			"answers": [
-				"Pelaksanaan Jaringan Dokumentasi Dan Informasi (JDI) Hukum online ini dibangun guna mempermudah penemuan kembali peraturan perundang-undangan secara cepat, tepat, dan akurat."
+				"Berikut yang saya temukan mengenai Tujuan JDIH Kota Bandung:\n\nPelaksanaan Jaringan Dokumentasi Dan Informasi (JDI) Hukum online ini dibangun guna mempermudah penemuan kembali peraturan perundang-undangan secara cepat, tepat, dan akurat."
 			]
 		},
 		{
@@ -219,7 +253,7 @@
 				"nyari peraturannya gimana"
 			],
 			"answers": [
-				"Anda dapat mengikuti beberapa saran berikut:\n\n1. Peraturan apa yang ingin anda cari? apakah peraturan mengenai produk hukum atau informasi hukum.\n2. Bentuk atau Prihal Peraturan apa yang ingin anda cari?\nBentuk peraturan itu seperti **Peraturan Daerah**,**Peraturan Wali Kota**,**Keputusan Presiden*. untuk detail bentuk peraturan anda dapat mengetik **Bentuk Peraturan**\n3. Apabila anda tidak mengetahui bentuknya, anda dapat mencari menggunakan prihal saja\n4. Untuk melakukan pencarian Anda dapat melakukannya dengan dua opsi\n\n**Opsi pertama** pencarian menggunakan ASIH dengan mengirimkan pesan, akan tetapi ASIH memiliki format tersendiri, anda dapat mengetik **format** untuk melihat detailnya.\n\n**Opsi Kedua** Anda dapat melakukan pencarian di menu beranda pada fitur 'Cari Produk Hukum', setelah itu anda masukan prihal peraturan yang dicari pada 'Kata Kunci Pencarian'\n**Contoh Prihal**\n1. Lingkungan\n2. Pajak Daerah\n3. Kepariwisataan\n\nDiatas merupakan cara untuk mencari peraturan yang sudah saya sampaikan dengan detail, Apabila penjelasan kurang dipahami, anda dapat menghubungi admin dengan mengetik **kontak admin**{{pilihan:['bantuan', 'kontak admin']}} "
+				"Anda dapat mengikuti beberapa saran berikut:\n\n1. Peraturan apa yang ingin anda cari? apakah peraturan mengenai produk hukum atau informasi hukum.\n2. Bentuk atau Prihal Peraturan apa yang ingin anda cari?\nBentuk peraturan itu seperti **Peraturan Daerah**,**Peraturan Wali Kota**,**Keputusan Presiden**. untuk detail bentuk peraturan anda dapat mengetik **Bentuk Peraturan**\n3. Apabila anda tidak mengetahui bentuknya, anda dapat mencari menggunakan prihal saja\n4. Untuk melakukan pencarian Anda dapat melakukannya dengan dua opsi\n\n**Opsi pertama** pencarian menggunakan ASIH dengan mengirimkan pesan, akan tetapi ASIH memiliki format tersendiri, anda dapat mengetik **format** untuk melihat detailnya.\n\n**Opsi Kedua** Anda dapat melakukan pencarian di menu beranda pada fitur **'Cari Produk Hukum'**, setelah itu anda masukan prihal peraturan yang dicari pada **'Kata Kunci Pencarian'**\n\n**Contoh Prihal:**\n1. Lingkungan\n2. Pajak Daerah\n3. Kepariwisataan\n\nDiatas merupakan cara untuk mencari peraturan yang sudah saya sampaikan dengan detail, Apabila penjelasan kurang dipahami, anda dapat menghubungi admin dengan mengetik **kontak admin**{{pilihan:['bantuan', 'kontak admin']}} "
 			]
 		},
 		{
@@ -228,7 +262,7 @@
 				"Bentuk Peraturan"
 			],
 			"answers": [
-				"Berikut merupakan kumpulan Bentuk Peraturan:\n\n1. Peraturan Pemerintah Pengganti Undang Undang\n2. Undang Undang\n3. Keputusan Presiden\n4 . Staatsblad Van Nederlandsch-Indie\n5. Undang Undang Dasar 1945\n6. Mahkamah Agung\n7. Mahkamah Konstitusi\n8. Peraturan Presiden\n9. Instruksi Presiden\n10. Peraturan Pemerintah"
+				"Berikut merupakan kumpulan Bentuk Peraturan:\n\n1. Peraturan Pemerintah Pengganti Undang Undang\n2. Undang Undang\n3. Keputusan Presiden\n4. Staatsblad Van Nederlandsch-Indie\n5. Undang Undang Dasar 1945\n6. Mahkamah Agung\n7. Mahkamah Konstitusi\n8. Peraturan Presiden\n9. Instruksi Presiden\n10. Peraturan Pemerintah"
 			]
 		},
 		{
@@ -250,6 +284,7 @@
 			"intent": "agen.sapaan-islam",
 			"utterances": [
 				"Assalamu'alaikum",
+        "Assalamualaikum",
 				"Assalamu'alaikum wr.wb",
 				"Assalamu'alaikum wr wb"
 			],
