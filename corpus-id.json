@@ -43,25 +43,18 @@
 		{
 			"intent": "agen.search-produk-hukum",
 			"utterances": [
-				"Tentang",
 				"tentang",
+				"terbaru",
 				"ttg",
-				"Perihal",
-				"Mengenai",
+				"perihal",
 				"mengenai",
 				"perihal",
 				"terkait",
-				"Terkait",
-				"Nomor",
 				"nomor",
-				"Nomer",
-				"Nmr",
+				"nomer",
 				"nmr",
-				"No",
 				"no",
-				"Tahun",
 				"tahun",
-				"Thn",
 				"thn"
 			],
 			"answers": [
@@ -73,15 +66,10 @@
 		{
 			"intent": "agen.pengalihan-message-tanya",
 			"utterances": [
-				"Tanya",
 				"tanya",
-				"Bertanya",
 				"bertanya",
-				"Kenapa",
 				"kenapa",
-				"Apakah",
 				"apakah",
-				"Apkh",
 				"apkh"
 			],
 			"answers": [
@@ -95,16 +83,10 @@
 			"intent": "agen.pengalihan-message-meminta",
 			"utterances": [
 				"meminta",
-				"Meminta",
 				"minta",
-				"Minta",
-				"Kalau",
 				"kalau",
-				"Kalow",
 				"kalow",
-				"Kalo",
 				"kalo",
-				"Klw",
 				"klw"
 			],
 			"answers": [
@@ -116,9 +98,8 @@
 		{
 			"intent": "agen.pengalihan-message-tidak-bisa",
 			"utterances": [
-				"TIDAKBISA",
-				"TidakBisa",
-				"GakBisa"
+				"Tidak Bisa",
+				"Gak Bisa"
 			],
 			"answers": [
 				"Mohon maaf atas kendalanya.\n\nSistem kami masih dalam tahap pengembangan, Apabila kendala masih berlanjut anda dapat menghubungi admin",
@@ -129,11 +110,7 @@
 			"intent": "agen.admin",
 			"utterances": [
 				"admin",
-				"Admin",
-				"Kontak Admin",
-				"kontak admin",
-				"Kontak admin",
-				"kontak Admin"
+				"kontak admin"
 			],
 			"answers": [
 				"Untuk menghubungi admin, anda dapat mengirimkan pesan pada tautan berikut: [Kontak Admin](/asih/tanya-admin)",
