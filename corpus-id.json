@@ -2,44 +2,37 @@
   "name": "Corpus",
   "locale": "id",
   "data": [
-    {
-      "intent": "agen.ASIH",
-      "utterances": [
-        "Apa itu ASIH",
-        "ASIH teh naon",
-        "Kamu siapa",
-        "About ASIH"
-      ],
-      "answers": [
-        "ASIH merupakan singkatan dari Asisten Sistem Informasi Hukum.\n\n Saya dibuat oleh mahasiswa Sekolah Tinggi Teknologi Bandung dalam Program Kerjasama dengan Pemerintah Kota Bandung.\n\n Saya dikembangkan oleh 3 (tiga) programmer selama kurang lebih 5 bulan berbarengan dengan didesain ulangnya website yang sekarang anda gunakan\n\n Berikut ketiga mahasiswa yang telah berkontribusi dalam pengembangan ASIH dan Desain Ulang website dan mobile:\n\n1. Arief Rachmawan\n Sebagai full stack developer website\n2. Listyo Adi Pamungkas\n Sebagai full stack developer mobile\n3. Sandi Hermawan\n Sebagai pengembang Artificial Inteligence\n\n Untuk mencapai hasil yang lebih optimal saya akan terus dikembangkan."
-      ]
-    },
-    {
-      "intent": "agen.tugas-ASIH",
-      "utterances": [
-        "Apa tugas ASIH",
-        "Apa sih tugas ASIH",
-        "Apa tugas Kamu",
-        "Tugas ASIH"
-      ],
-      "answers": [
-        "Saya bertugas untuk menjadi AsisteN Sistem Informasi Hukum Kota Bandung, Dimana saya akan menjawab beberapa hal terkait JDIH Kota Bandung.\n\n Selain itu disini juga bisa dipakai untuk mencari sebuah peraturan hukum."
-      ]
-    },
+		{
+			"intent": "agen.ASIH",
+			"utterances": [
+				"Apa itu ASIH",
+				"ASIH teh naon",
+				"Kamu siapa",
+				"About ASIH"
+			],
+			"answers": [
+				"ASIH merupakan singkatan dari Asisten Sistem Informasi Hukum. Saya dibuat oleh mahasiswa Sekolah Tinggi Teknologi Bandung dalam Program Kerjasama dengan Pemerintah Kota Bandung.\n\n Saya dikembangkan oleh 3 (tiga) programmer selama kurang lebih 5 bulan berbarengan dengan didesain ulangnya website yang sekarang anda gunakan\n\n Berikut ketiga mahasiswa yang telah berkontribusi dalam pengembangan ASIH dan Desain Ulang website dan mobile:\n\n1. Arief Rachmawan\n Sebagai full stack developer website\n2. Listyo Adi Pamungkas\n Sebagai full stack developer mobile\n3. Sandi Hermawan\n Sebagai pengembang Artificial Inteligence\n\n Untuk mencapai hasil yang lebih optimal saya akan terus dikembangkan."
+			]
+		},
+		{
+			"intent": "agen.tugas-ASIH",
+			"utterances": [
+				"Apa tugas ASIH",
+				"Apa sih tugas ASIH",
+				"Apa tugas Kamu",
+				"Tugas ASIH"
+			],
+			"answers": [
+				"Saya bertugas untuk menjadi AsisteN Sistem Informasi Hukum Kota Bandung, Dimana saya akan menjawab beberapa hal terkait JDIH Kota Bandung.\n\n Selain itu disini juga bisa dipakai untuk mencari sebuah peraturan hukum."
+			]
+		},
 		{
 			"intent": "agen.format-penulisan",
 			"utterances": ["format"],
 			"answers": [
 				"Contoh format yang saya mengerti:\n\n1. Tampilkan **Peraturan Daerah** tentang **Pajak Restoran**\n2. Saya ingin mencari **Produk Hukum** tentang **Tanah**\n3. **Perwal** tentang **Lingkungan**\n4. **Peraturan** nomor **60** tahun **2022**"
 			]
-		},
-		{
-			"intent": "agen.format-penulisan",
-			"utterances": ["bantuan"],
-			"answers": [
-				"Berikut merupakan pertanyaan yang dapat saya jawab:\n\n1. Apa itu JDIH\n2. Tugas JDIH\n3. Visi JDIH\n4. Misi JDIH\n5. Tujuan JDIH\n6. Bentuk Peraturan\n7. Cara Mencari Peraturan"
-			]
-		},
+		},	
 		{
 			"intent": "agen.search-produk-hukum",
 			"utterances": [
@@ -55,7 +48,10 @@
 				"nmr",
 				"no",
 				"tahun",
-				"thn"
+				"thn",
+				"peraturan",
+				"dokumen",
+				"hukum"
 			],
 			"answers": [
 				{
@@ -65,13 +61,7 @@
 		},
 		{
 			"intent": "agen.pengalihan-message-tanya",
-			"utterances": [
-				"tanya",
-				"bertanya",
-				"kenapa",
-				"apakah",
-				"apkh"
-			],
+			"utterances": ["tanya", "bertanya", "kenapa", "apakah", "apkh"],
 			"answers": [
 				"Mohon maaf, saya tidak mengerti maksud dari pertanyaan anda.\n\nUntuk melihat format penulisan, anda dapat mengetik **bantuan**.\nApabila permintaan anda tidak berkaitan dengan pencarian produk hukum, anda dapat menghubungi admin dengan mengetik **kontak admin**{{pilihan:['bantuan', 'kontak admin']}}",
 				"Mohon maaf, saya tidak bisa memproses pertanyaan anda.\n\nUntuk melihat format penulisan, anda dapat mengetik **bantuan**.\nApabila permintaan anda tidak berkaitan dengan pencarian produk hukum, anda dapat menghubungi admin dengan mengetik **kontak admin**{{pilihan:['bantuan', 'kontak admin']}}",
@@ -81,14 +71,7 @@
 		},
 		{
 			"intent": "agen.pengalihan-message-meminta",
-			"utterances": [
-				"meminta",
-				"minta",
-				"kalau",
-				"kalow",
-				"kalo",
-				"klw"
-			],
+			"utterances": ["meminta", "minta", "kalau", "kalow", "kalo", "klw"],
 			"answers": [
 				"Sepertinya pertanyaan anda lumayan rumit. Jika anda ingin mencari produk hukum, anda bisa langsung mencari bentuk atau perihal produk hukum yang anda cari.\n\nUntuk melihat format penulisan, anda dapat mengetik **bantuan**.\nApabila permintaan anda tidak berkaitan dengan pencarian produk hukum, anda dapat menghubungi admin dengan mengetik **kontak admin**{{pilihan:['bantuan', 'kontak admin']}}",
 				"Mohon maaf saya kurang mengerti maksud dari perintah anda.\nUntuk melihat format penulisan, anda dapat mengetik **bantuan**.\nApabila permintaan anda tidak berkaitan dengan pencarian produk hukum, anda dapat menghubungi admin dengan mengetik **kontak admin**{{pilihan:['bantuan', 'kontak admin']}}",
@@ -97,10 +80,7 @@
 		},
 		{
 			"intent": "agen.pengalihan-message-tidak-bisa",
-			"utterances": [
-				"Tidak Bisa",
-				"Gak Bisa"
-			],
+			"utterances": ["Tidak Bisa", "Gak Bisa"],
 			"answers": [
 				"Mohon maaf atas kendalanya.\n\nSistem kami masih dalam tahap pengembangan, Apabila kendala masih berlanjut anda dapat menghubungi admin",
 				"Maaf, sistem kami masih dalam tahap pengembangan.\n\nApabila kendala masih berlanjut anda dapat menghubungi admin"
@@ -108,10 +88,7 @@
 		},
 		{
 			"intent": "agen.admin",
-			"utterances": [
-				"admin",
-				"kontak admin"
-			],
+			"utterances": ["admin", "kontak admin"],
 			"answers": [
 				"Untuk menghubungi admin, anda dapat mengirimkan pesan pada tautan berikut: [Kontak Admin](/asih/tanya-admin)",
 				"Admin dapat dihubungi melalui tautan berikut: [Kontak Admin](/asih/tanya-admin)"
@@ -130,12 +107,9 @@
 				"Mengenai Apa itu JDIH mungkin akan diketahui ketika anda membaca sejarah JDIHN berikut: Ide membentuk Jaringan Dokumentasi dan Informasi Hukum Nasional (JDIHN), secara historis melekat erat dengan pembangunan hukum nasional dalam upaya mewujudkan supremasi hukum. Dikatakan demikian karena embrio pembentukan JDIHN adalah salah satu rekomendasi dari kegiatan pembangunan hukum nasional yaitu Seminar Hukum Nasional III tahun 1974 di Surabaya. \n\nMengenai detailnya anda dapat melihat langsung pada profil JDIH"
 			]
 		},
-    {
+		{
 			"intent": "agen.setifikat-tanah",
-			"utterances": [
-				"cara membuat sertifikat tanah",
-        "sertifikat tanah"
-			],
+			"utterances": ["cara membuat sertifikat tanah", "sertifikat tanah"],
 			"answers": [
 				"Mohon maaf, saya belum diberikan izin untuk menjawab pertanyaan mengenai sertifikat tanah, untuk informasi lebih lanjut anda dapat menghubungi admin{{pilihan:['kontak admin']}}"
 			]
@@ -227,7 +201,8 @@
 				"cara mencari peraturan itu bagaimana ya",
 				"cara mencari peraturan itu gmn ya",
 				"cara mencari peraturan itu bgmn ya",
-				"nyari peraturannya gimana"
+				"nyari peraturannya gimana",
+				"bantuan"
 			],
 			"answers": [
 				"Anda dapat mengikuti beberapa saran berikut:\n\n1. Peraturan apa yang ingin anda cari? apakah peraturan mengenai produk hukum atau informasi hukum.\n2. Bentuk atau Prihal Peraturan apa yang ingin anda cari?\nBentuk peraturan itu seperti **Peraturan Daerah**,**Peraturan Wali Kota**,**Keputusan Presiden**. untuk detail bentuk peraturan anda dapat mengetik **Bentuk Peraturan**\n3. Apabila anda tidak mengetahui bentuknya, anda dapat mencari menggunakan prihal saja\n4. Untuk melakukan pencarian Anda dapat melakukannya dengan dua opsi\n\n**Opsi pertama** pencarian menggunakan ASIH dengan mengirimkan pesan, akan tetapi ASIH memiliki format tersendiri, anda dapat mengetik **format** untuk melihat detailnya.\n\n**Opsi Kedua** Anda dapat melakukan pencarian di menu beranda pada fitur **'Cari Produk Hukum'**, setelah itu anda masukan prihal peraturan yang dicari pada **'Kata Kunci Pencarian'**\n\n**Contoh Prihal:**\n1. Lingkungan\n2. Pajak Daerah\n3. Kepariwisataan\n\nDiatas merupakan cara untuk mencari peraturan yang sudah saya sampaikan dengan detail, Apabila penjelasan kurang dipahami, anda dapat menghubungi admin dengan mengetik **kontak admin**{{pilihan:['bantuan', 'kontak admin']}} "
@@ -235,22 +210,14 @@
 		},
 		{
 			"intent": "agen.bentuk-peraturan",
-			"utterances": [
-				"Bentuk Peraturan"
-			],
+			"utterances": ["Bentuk Peraturan"],
 			"answers": [
 				"Berikut merupakan kumpulan Bentuk Peraturan:\n\n1. Peraturan Pemerintah Pengganti Undang Undang\n2. Undang Undang\n3. Keputusan Presiden\n4. Staatsblad Van Nederlandsch-Indie\n5. Undang Undang Dasar 1945\n6. Mahkamah Agung\n7. Mahkamah Konstitusi\n8. Peraturan Presiden\n9. Instruksi Presiden\n10. Peraturan Pemerintah"
 			]
 		},
 		{
 			"intent": "agen.sapaan",
-			"utterances": [
-				"Hai",
-				"halo",
-				"hey",
-				"punten",
-				"punteun"
-			],
+			"utterances": ["Hai", "halo", "hey", "punten", "punteun"],
 			"answers": [
 				"Halo juga.",
 				"Hai juga.",
@@ -261,7 +228,7 @@
 			"intent": "agen.sapaan-islam",
 			"utterances": [
 				"Assalamu'alaikum",
-        "Assalamualaikum",
+				"Assalamualaikum",
 				"Assalamu'alaikum wr.wb",
 				"Assalamu'alaikum wr wb"
 			],
@@ -271,12 +238,7 @@
 		},
 		{
 			"intent": "agen.sapaan-pagi",
-			"utterances": [
-				"Selamat Pagi",
-				"selamat pagi",
-				"pagi",
-				"Pagi"
-			],
+			"utterances": ["selamat pagi", "pagi"],
 			"answers": [
 				"Selamat pagi juga.",
 				"Selamat pagi juga, ada yang bisa saya bantu?"
@@ -284,12 +246,7 @@
 		},
 		{
 			"intent": "agen.sapaan-siang",
-			"utterances": [
-				"Selamat Siang",
-				"selamat siang",
-				"siang",
-				"Siang"
-			],
+			"utterances": ["selamat siang", "siang"],
 			"answers": [
 				"Selamat siang juga.",
 				"Selamat siang juga, ada yang bisa saya bantu?"
@@ -297,12 +254,7 @@
 		},
 		{
 			"intent": "agen.sapaan-sore",
-			"utterances": [
-				"Selamat Sore",
-				"selamat sore",
-				"sore",
-				"Sore"
-			],
+			"utterances": ["selamat sore", "sore", "Sore"],
 			"answers": [
 				"Selamat sore juga.",
 				"Selamat sore juga, ada yang bisa saya bantu?"
@@ -310,12 +262,7 @@
 		},
 		{
 			"intent": "agen.sapaan-malam",
-			"utterances": [
-				"Selamat Malam",
-				"selamat malam",
-				"malam",
-				"Malam"
-			],
+			"utterances": ["selamat malam", "malam", "Malam"],
 			"answers": [
 				"Selamat malam juga.",
 				"Selamat malam juga, ada yang bisa saya bantu?"
