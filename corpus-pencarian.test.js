@@ -9,6 +9,7 @@ module.exports = [
       tipe: "",
       bentuk: "peraturan daerah",
       terbaru: false,
+      kategori: "TP",
     },
   },
   {
@@ -21,6 +22,7 @@ module.exports = [
       tipe: "",
       bentuk: "peraturan daerah",
       terbaru: false,
+      kategori: "FP",
     },
   },
   {
@@ -33,6 +35,7 @@ module.exports = [
       tipe: "",
       bentuk: "",
       terbaru: false,
+      kategori: "TP",
     },
   },
   {
@@ -45,6 +48,7 @@ module.exports = [
       tipe: "",
       bentuk: "",
       terbaru: false,
+      kategori: "FN",
     },
   },
   {
@@ -57,6 +61,7 @@ module.exports = [
       tipe: "",
       bentuk: "",
       terbaru: false,
+      kategori: "TP",
     },
   },
   {
@@ -69,6 +74,7 @@ module.exports = [
       tipe: "",
       bentuk: "peraturan wali kota",
       terbaru: false,
+      kategori: "TP",
     },
   },
   {
@@ -81,6 +87,7 @@ module.exports = [
       tipe: "",
       bentuk: "peraturan daerah",
       terbaru: true,
+      kategori: "TP",
     },
   },
   {
@@ -93,6 +100,7 @@ module.exports = [
       tipe: "",
       bentuk: "peraturan pusat",
       terbaru: false,
+      kategori: "TP",
     },
   },
   {
@@ -105,6 +113,7 @@ module.exports = [
       tipe: "",
       bentuk: "peraturan menteri",
       terbaru: false,
+      kategori: "TP",
     },
   },
   {
@@ -117,6 +126,7 @@ module.exports = [
       tipe: "",
       bentuk: "",
       terbaru: false,
+      kategori: "TP",
     },
   },
 ];
