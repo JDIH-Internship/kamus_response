@@ -208,6 +208,7 @@ module.exports = [
     kategori: "TP",
   },
   {
+    input:"apakah ada peraturan tentang dana penunjang pendidikan sekolah",
     expected: "agen.search-produk-hukum",
     expectedValue: {
       perihal: "dana penunjang pendidikan sekolah",
