@@ -23,7 +23,7 @@ module.exports = [
       bentuk: "peraturan daerah",
       terbaru: false,
     },
-    kategori: "FP",
+    kategori: "TN",
   },
   {
     input: "apakah ada peraturan tentang visa?",
@@ -140,7 +140,7 @@ module.exports = [
       bentuk: "",
       terbaru: false,
     },
-    kategori: "FP",
+    kategori: "TN",
   },
   {
     input: "saya ingin tau apakah ada peraturan mengenai batas usia pensiun bagi pejabat struktural",
@@ -153,7 +153,7 @@ module.exports = [
       bentuk: "",
       terbaru: false,
     },
-    kategori: "FP",
+    kategori: "TP",
   },
   {
     input: "apakah berita saya dapat diamankan",
@@ -192,7 +192,7 @@ module.exports = [
       bentuk: "",
       terbaru: false,
     },
-    kategori: "FP",
+    kategori: "TN",
   },
   {
     input: "petunjuk pelaksanaan mengenai peraturan pemerintah",
