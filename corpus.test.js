@@ -31,7 +31,7 @@ module.exports = [
   },
   {
     input: "bantuan",
-    expected: "agen.format-penulisan",
+    expected: "agen.cari-peraturan",
     kategori: "TP",
   },
   {
